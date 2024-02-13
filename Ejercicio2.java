@@ -9,6 +9,7 @@ public class Ejercicio2 {
         textoIngresado = leer.nextLine();
 
         System.out.println("El texto ingresado es: " + textoIngresado);
+        leer.close();
 
     }
 }
