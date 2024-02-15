@@ -11,6 +11,7 @@ public class Ejercicio12 {
         numero2 = leer.nextInt();
         System.out.print("Ingrese el numero 3: ");
         numero3 = leer.nextInt();
+        leer.close();
 
         promedio = (numero1 + numero2 + numero3)/3;
 
