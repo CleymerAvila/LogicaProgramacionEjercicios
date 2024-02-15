@@ -6,6 +6,7 @@ public class Ejercicio7 {
         int numerodado;
         System.out.print("Ingrese un numero: ");
         numerodado = leer.nextInt();
+        leer.close();
 
         if (numerodado > 0) {
             System.out.println("El numero ingresado " + numerodado + " es un numero positivo");
