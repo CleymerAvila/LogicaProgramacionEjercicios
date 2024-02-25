@@ -8,6 +8,7 @@ public class Ejercicio25 {
 
         System.out.println("Ingresa los grados en Centigrados");
         gradosCentigrados = sc.nextDouble();
+        sc.close();
 
         gradosFahrenheit = ((gradosCentigrados *9)/5) + 32;
 
