@@ -12,7 +12,11 @@ public class Ejercicio43 {
 
         int numeroMayor = calcularNumeroMayor(numero1, numero2);
 
-        System.out.println("El numero mayor entre el entero "+ numero1 + " y el entero "+ numero2 + " es "+numeroMayor);
+        if (numero1 != numero2) {
+            System.out.println("El numero mayor entre el entero "+ numero1 + " y el entero "+ numero2 + " es "+numeroMayor);
+        } else {
+            System.out.println("Los numeros son iguales");
+        }
         
     }
 
