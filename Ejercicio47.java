@@ -9,7 +9,7 @@ public class Ejercicio47 {
         cantComprada = sc.nextDouble();
         System.out.print("Ingresa el precio (Valor) de la compra: ");
         precioCompra = sc.nextDouble();
-        System.out.println("Ingresa el Precio Pagado por la compra");
+        System.out.print("Ingresa el Precio Pagado por la compra");
         precioPagado = sc.nextDouble();
         sc.close();
 
