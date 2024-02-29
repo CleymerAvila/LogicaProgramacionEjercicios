@@ -8,6 +8,7 @@ public class Ejercicio56 {
 
         System.out.println("Ingresa un tiempo espresados en segundos");
         tiempoExpEnSeg = sc.nextInt();
+        sc.close();
 
         segundos = tiempoExpEnSeg % 60;
         minutos = tiempoExpEnSeg / 60;
