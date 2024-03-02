@@ -10,19 +10,38 @@ public class Ejercicio23 {
         boolean juegoTerminado=false;
         ArrayList<String> intentos = new ArrayList<>();
         String colorPos1="ROJO    ", colorPos2="ROJO    ", colorPos3="ROJO    ";
-
-        int digitoAleatorio1 = aleatorio.nextInt(10);
-        int digitoAleatorio2 = aleatorio.nextInt(10);
-        int digitoAleatorio3 = aleatorio.nextInt(10);
+        int digitoAleatorio1;
+        int digitoAleatorio2;
+        int digitoAleatorio3;
 
         do {
+            digitoAleatorio1 = aleatorio.nextInt(10);
+            digitoAleatorio2 = aleatorio.nextInt(10);
+            digitoAleatorio3 = aleatorio.nextInt(10);
+            if (digitoAleatorio1 != digitoAleatorio2 && digitoAleatorio1 != digitoAleatorio3 && digitoAleatorio2 != digitoAleatorio3) {
+                break;
+            }
+        } while (true);
+        
+
+        do {
+            
             System.out.println("\nProporciona por favor tres digitos para cada posicion (1,2,3)");
-            System.out.println("Posicion 1:  ");
-            digito1=sc.nextInt();
-            System.out.println("Posicion 2:");
-            digito2=sc.nextInt();
-            System.out.println("Posicion 3:");
-            digito3=sc.nextInt();
+            do {
+                System.out.println("Posicion 1:  ");
+                digito1=sc.nextInt();
+            } while (digito1 < 0 || digito1 >= 10);
+            
+            do {
+                System.out.println("Posicion 2:");
+                digito2=sc.nextInt();
+            } while (digito2 < 0 || digito2 >= 10);
+            
+            do {
+                System.out.println("Posicion 3:");
+                digito3=sc.nextInt(); 
+            } while (digito3 < 0 || digito3 >= 10);
+            
 
             
             if (digito1==digitoAleatorio1) {
