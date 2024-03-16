@@ -15,11 +15,18 @@ public class Ejercicio55 {
     }
 
     public static int devolverEntero(int num){
-        int numResult;
-        if (num % 2 != 0){
-            numResult = 1;
-        } else{
-            numResult = 0;
+        int numResult=0;
+        boolean esPrimo = true;
+        if(num >1){
+            for (int z = 2; z <= Math.sqrt(num); z++){
+                if(num % z == 0){
+                    esPrimo=false;
+                    break;
+                }
+            }
+            if (esPrimo){
+                numResult = 1;
+            }
         }
         return numResult;
     }
