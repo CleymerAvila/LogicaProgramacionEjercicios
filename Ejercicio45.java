@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 public class Ejercicio45 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -20,7 +19,7 @@ public class Ejercicio45 {
     public static int calcularEntero(Double numReal){
 
         int numeroResult;
-        if (numReal <0) {
+        if (numReal < 0) {
             numeroResult = -1;
         } else if (numReal > 0) {
             numeroResult = 1;

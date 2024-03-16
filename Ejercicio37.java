@@ -7,7 +7,7 @@ public class Ejercicio37 {
 
         System.out.println("Ingresa el numero de horas y minutos estacionado el vehiculo");
         System.out.print("Hora: ");
-        horasEstacionadas= sc.nextInt();
+        horasEstacionadas= sc.nextDouble();
         do {
             System.out.print("Minutos: ");
             minEstacionados = sc.nextDouble();

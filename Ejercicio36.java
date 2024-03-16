@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 public class Ejercicio36 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -8,7 +7,7 @@ public class Ejercicio36 {
 
         System.out.println("Ingresa el numero de horas y minutos estacionado el vehiculo");
         System.out.print("Hora: ");
-        horasEstacionadasInicial = sc.nextInt();
+        horasEstacionadasInicial = sc.nextDouble();
         System.out.print("Minutos: ");
         minEstacionados = sc.nextDouble();
         sc.close();
