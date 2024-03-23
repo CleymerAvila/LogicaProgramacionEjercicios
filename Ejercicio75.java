@@ -1,22 +1,21 @@
 import java.util.Scanner;
-
 public class Ejercicio75 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int añoIngr;
+        int anioIngr;
         
         do {
             System.out.println("Ingresa un año");
-            añoIngr = sc.nextInt();
-        } while (añoIngr < 400);
+            anioIngr = sc.nextInt();
+        } while (anioIngr < 400);
         sc.close();
 
-        if (añoIngr % 4 == 0 && añoIngr % 100 !=0) {
-            System.out.println("El año de "+ añoIngr + " es bisiesto");
-        } else if (añoIngr % 4 == 0 && añoIngr % 100 == 0 && añoIngr % 400 ==0) {
-            System.out.println("El año de "+ añoIngr + " es bisiesto");
+        if (anioIngr % 4 == 0 && anioIngr % 100 !=0) {
+            System.out.println("El año de "+ anioIngr + " es bisiesto");
+        } else if (anioIngr % 4 == 0 && anioIngr % 100 == 0 && anioIngr % 400 ==0) {
+            System.out.println("El año de "+ anioIngr + " es bisiesto");
         } else {
-            System.out.println("El año de "+ añoIngr + " no es bisiesto");
+            System.out.println("El año de "+ anioIngr + " no es bisiesto");
         }
     }
 }
