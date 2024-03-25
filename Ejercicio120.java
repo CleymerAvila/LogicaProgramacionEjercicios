@@ -21,7 +21,7 @@ public class Ejercicio120 {
             } else if (opc == 'N') {
                 stop=true;
             } else {
-                JOptionPane.showMessageDialog(null,"Opcion Incorrecta");
+                JOptionPane.showMessageDialog(null,"Opcion Incorrecta!");
             }
         } while (stop!= true);
     }
