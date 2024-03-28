@@ -8,7 +8,7 @@ public class Ejercicio133 {
         int numMayor=0;
         boolean numIguales=false;
 
-        System.out.println("Ingrese dos numeros para verificar el mayor: ");
+        System.out.println("Ingrese dos numeros para verificar el mayor y el menor: ");
         System.out.print("- ");
         num1 = sc.nextInt();
         System.out.print("- ");
