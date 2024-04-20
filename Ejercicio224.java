@@ -19,7 +19,7 @@ public class Ejercicio224 {
 
         for (int i = 0; i < 10; i++) {
 
-            System.out.println("\nNombre de alumno: ");
+            System.out.println("\nNombre de alumno "+(i+1)+": ");
             String nombre = sc.nextLine();
             System.out.println("\nIngresa notas");
             System.out.print("nota practicas: ");
@@ -29,22 +29,19 @@ public class Ejercicio224 {
             System.out.print("nota Teorica: ");
             float notaTeorica = sc.nextFloat();
 
-            if (!((notaProblemas<0 || notaProblemas >10)
-                && (notaPracticas<0 || notaPracticas >10))
-                && (notaTeorica<0 || notaTeorica >10)) {
-                if (nombre.isEmpty()){
-                    System.out.println("\nEl Programa ha finalizado!");
-                    break;
-                }
+            if (nombre.isEmpty()){
+                System.out.println("\nEl Programa ha finalizado!");
+                break;
+            }
+
+            if (notaPracticas > 0 && notaPracticas <=10
+                && notaProblemas > 0 && notaProblemas <=10
+                && notaTeorica > 0 && notaTeorica <= 10) {
 
                 float notaFinal = (notaPracticas * PORCENTAJE_PRACTICA) + (notaProblemas * PORCENTAJE_PROBLEMAS) + (notaTeorica * PORCENTAJE_TEORICA);
 
                 System.out.printf("\n%s %s %s %.2f", "EL alumno ", nombre, " ha sacado en la nota final", notaFinal);
             } else {
-                if (nombre.isEmpty()){
-                    System.out.println("\nEl Programa ha finalizado!");
-                    break;
-                }
                 System.out.println("No se puede imprimir la nota final ya que las notas no estan en el rango permitido (0-10)");
             }
 
