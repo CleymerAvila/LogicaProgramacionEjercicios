@@ -5,7 +5,7 @@ public class Ejercicio235 {
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Ingresa la cantidad de los primeros numeros \nde la serie fibonaci imprimir");
-        int cantidadFibonaci = Math.abs(sc.nextInt());
+        int cantidadFibonaci = Math.abs(sc.nextInt()); sc.close();
 
 
         int primerNumero=0;
